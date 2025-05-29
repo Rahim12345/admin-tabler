@@ -36,7 +36,7 @@
 
     @include('back.includes.parts.header')
 
-    <div class="page-wrapper col-md-10 md-offset-1">
+    <div class="page-wrapper col-md-9">
         <div class="col-md-12">
             <div class="page-wrapper">
                 <div class="container-xl">

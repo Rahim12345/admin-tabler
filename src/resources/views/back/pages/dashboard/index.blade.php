@@ -1,7 +1,7 @@
 @extends('back.layouts.master')
 
 @section('title')
-    - Əsas səhifə
+    Əsas səhifə
 @endsection
 
 @section('css')

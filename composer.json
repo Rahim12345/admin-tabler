@@ -11,7 +11,8 @@
   "require": {
     "php": "^8.2",
     "illuminate/support": "^12.0",
-    "illuminate/database": "^12.0"
+    "illuminate/database": "^12.0",
+    "laravel/ui": "^4.2"
   },
   "extra": {
     "laravel": {
@@ -19,5 +20,8 @@
         "RsCode\\AdminTabler\\AdminTablerProvider"
       ]
     }
+  },
+  "suggest": {
+    "laravel/ui": "Laravel UI scaffolding for auth and frontend (optional)"
   }
 }

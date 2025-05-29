@@ -28,7 +28,7 @@ class AdminTablerProvider extends ServiceProvider
         ], 'middleware');
 
         $this->publishes([
-            __DIR__ . '/../src/lang/*' => base_path('lang/'),
+            __DIR__ . '/../src/lang' => lang_path(),
         ], 'lang');
 
         $this->publishes([
@@ -36,13 +36,12 @@ class AdminTablerProvider extends ServiceProvider
         ], 'models');
 
         $this->publishes([
-            __DIR__ . '/../src/public/*' => base_path('public/'),
+            __DIR__ . '/../src/public' => public_path('/'),
         ], 'public');
 
         $this->publishes([
-            __DIR__ . '/../src/resources/views/*' => resource_path('views/'),
+            __DIR__ . '/../src/resources/views' => resource_path('views/'),
         ], 'views');
-
 
     }
 

@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 
-use App\Models\Language;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,11 +18,10 @@ class setLocale
         if (session()->has('locale')) {
             app()->setLocale(session('locale'));
         } else {
-            app()->setLocale(config('app.locale'));
+            app()->setLocale('az');
         }
 
-        $current_language = Language::where('short_name', app()->getLocale())->firstOrFail();
-        session()->put('locale_info', $current_language);
+        session()->put('locale_info', app()->getLocale());
         return $next($request);
     }
 }
