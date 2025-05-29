@@ -1,0 +1,172 @@
+.navOpenModal {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000
+}
+
+p > img {
+    max-width: 60% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 0;
+}
+
+.bg-half {
+    background-image: -webkit-linear-gradient(
+        -45deg, #d63939 50%, #2fb344 50%);
+}
+
+.sikayetBtn {
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+a.text-body.d-block {
+    text-decoration: none;
+}
+
+div#urban-overlay {
+    display: none;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.btn .icon {
+    margin: auto;
+}
+
+.oyrenicinin-cavabi-aciq-yazili {
+    width: 120px;
+}
+
+.mm-3 {
+    margin-right: 20px;
+}
+
+.btn_css {
+    transform: rotate(45deg);
+    padding: 10px 80px;
+    position: absolute;
+    right: -26px;
+}
+
+.width_85 {
+    width: 85%;
+    text-align: justify;
+    align-items: center;
+}
+
+.text-ag {
+    color: #fff !important;
+}
+
+.card-icons:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .3), transparent);
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.card-icons:hover:before {
+    opacity: 1;
+}
+
+.w-max {
+    width: max-content;
+}
+
+.link {
+    opacity: 0;
+    left: 30%;
+    cursor: pointer;
+    color: #fff;
+    top: 20px;
+    font-size: 16px;
+    transition: all .3s linear;
+}
+
+.preview-link{
+    left: 40%;
+}
+
+td.text-center.bg-primary.text-light{
+    padding: 0 !important;
+}
+
+.modal-body{
+    padding: 0 !important;
+}
+
+.times {
+    opacity: 0;
+    right: 30%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    top: 20px;
+    transition: all .3s linear;
+}
+
+.action-none {
+    display: none;
+}
+
+.action-flex {
+    display: flex;
+}
+
+.card-icons:hover .link,
+.card-icons:hover .times {
+    opacity: 1;
+}
+
+.card-icons.position-relative.w-max {
+    display: inline-flex;
+}
+
+@media (max-width: 768px) {
+    .width_85 {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn_css {
+        position: initial;
+        transform: rotate(0deg);
+        padding: 10px 30px;
+    }
+
+    .oyrenicinin-cavabi-aciq-yazili {
+        width: 250px;
+    }
+
+    audio{
+        width: 235px !important;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "rs-code/subscription-form",
+  "description": "Laravel üçün hazır admin panel tabler ilə",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "RsCode\\AdminTabler\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^12.0",
+    "illuminate/database": "^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RsCode\\AdminTabler\\AdminTablerProvider"
+      ]
+    }
+  }
+}

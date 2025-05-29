@@ -1,0 +1,14 @@
+button.btn.btn-danger.show_confirm{
+    height: 36px;
+}
+
+span.my-highlight {
+    background-color: #89893d;
+    color: #fff;
+    font-weight: bold;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
