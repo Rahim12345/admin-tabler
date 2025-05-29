@@ -8,11 +8,23 @@ class AdminTablerProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
+            __DIR__ . '/../src/bootstrap/app.php' => base_path('bootstrap/app.php'),
+        ], 'bootstrap');
+
+        $this->publishes([
             __DIR__ . '/../src/database/migrations/2024_09_23_021808_create_visitors_table.php' => database_path('migrations/2024_09_23_021808_create_visitors_table.php'),
         ], 'migrations');
 
         $this->publishes([
             __DIR__ . '/../src/database/seeders/VisitorSeeder.php' => database_path('seeders/VisitorSeeder.php'),
+        ], 'seeders');
+
+        $this->publishes([
+            __DIR__ . '/../src/database/seeders/UserSeeder.php' => database_path('seeders/UserSeeder.php'),
+        ], 'seeders');
+
+        $this->publishes([
+            __DIR__ . '/../src/database/seeders/DatabaseSeeder.php' => database_path('seeders/DatabaseSeeder.php'),
         ], 'seeders');
 
         $this->publishes([

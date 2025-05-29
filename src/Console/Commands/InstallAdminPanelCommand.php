@@ -13,14 +13,15 @@ class InstallAdminPanelCommand extends Command
     public function handle(): void
     {
         // Publish files
-        $this->call('vendor:publish', ['--tag' => 'migrations']); // +
-        $this->call('vendor:publish', ['--tag' => 'seeders']); // +
-        $this->call('vendor:publish', ['--tag' => 'controllers']); // +
-        $this->call('vendor:publish', ['--tag' => 'middleware']); // +
-        $this->call('vendor:publish', ['--tag' => 'lang']); // -
-        $this->call('vendor:publish', ['--tag' => 'models']); // +
-        $this->call('vendor:publish', ['--tag' => 'public']); // -
-        $this->call('vendor:publish', ['--tag' => 'views']); // -
+        $this->call('vendor:publish', ['--tag' => 'bootstrap']);
+        $this->call('vendor:publish', ['--tag' => 'migrations']);
+        $this->call('vendor:publish', ['--tag' => 'seeders']);
+        $this->call('vendor:publish', ['--tag' => 'controllers']);
+        $this->call('vendor:publish', ['--tag' => 'middleware']);
+        $this->call('vendor:publish', ['--tag' => 'lang']);
+        $this->call('vendor:publish', ['--tag' => 'models']);
+        $this->call('vendor:publish', ['--tag' => 'public']);
+        $this->call('vendor:publish', ['--tag' => 'views']);
 
         $this->info('Admin dashboard package installed successfully.');
     }
