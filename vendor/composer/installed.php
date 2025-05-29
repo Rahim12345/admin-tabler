@@ -3,7 +3,7 @@
         'name' => 'rs-code/admin-dashboard',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'c537666db0eb53e09b021c3e3c4f0c04c1e8b887',
+        'reference' => '1ee2ed981aa3dfaaec1fd8eb3abd1ee3fd75f4c3',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -283,7 +283,7 @@
         'rs-code/admin-dashboard' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'c537666db0eb53e09b021c3e3c4f0c04c1e8b887',
+            'reference' => '1ee2ed981aa3dfaaec1fd8eb3abd1ee3fd75f4c3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
